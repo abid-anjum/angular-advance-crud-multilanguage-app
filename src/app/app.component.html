@@ -1,0 +1,8 @@
+<link  *ngIf="loadArabic" type="text/css" rel="stylesheet" [href]='sanitizer.bypassSecurityTrustResourceUrl(dynamicCSSUrlar)'>
+<link  *ngIf="!loadArabic" type="text/css" rel="stylesheet" [href]='sanitizer.bypassSecurityTrustResourceUrl(dynamicCSSUrleng)'>
+
+<div class="mainpage">
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>
